@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Expert (tr) Tools</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+      body {
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,4,44,1) 9%, rgba(9,121,67,1) 35%, rgba(0,212,255,1) 100%);
+        background-size: 400% 400%;
+        animation: gradient 55s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #dbc100;
+      }
+      
+      .center {
+        margin: 0 0 auto;
+        padding: 10% 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      tag {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        font-size: 30px;
+        border-radius: 10%;
+      }
+
+      yazi {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        border-radius: 10%;
+      }
+    
+      .editedButton {
+        margin: 50px;
+        border: none;
+        padding: 10px;
+        height: 35px;
+        width: 145px;
+        background: transparent;
+        border: 1px dashed white;
+        border-radius: 8px;
+        transition: .5s;
+        color: white;
+      }
+
+      .editedButton:hover {
+        width: 155px;
+        color: white
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="info">
+        <% if(checkLogin) {  %>
+          <img src="<%- getUser.avatarLink %>" class="avatar">
+          <tag><br>Welcome, <%- getUser.tag %><br><br></tag>
+        <%} else {%> 
+          <img src="https://cdn.glitch.com/d5d4cce2-b4cc-4197-9dc6-98190b3fa05f%2Fa_65bad6b9c976f4ac89a62ab9ea2e01ca.gif" class="avatar">
+          <tag><br>Developed by Expert (tr).dcw#1453<br><br></tag>
+        <%}%>
+        <hr style="width:450px;height:1px;border-width:0;color:gray;background-color:white">
+        <% if(checkLogin) {  %>
+          <button class="editedButton" onclick="location.href = '/logout'">Çıkış</button>
+          <button class="editedButton" onclick="location.href = '/dashboard/guilds'">Dashboard</button>
+        <%} else {%>
+          <button class="editedButton" onclick="location.href = '/login'">Giriş</button>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>
