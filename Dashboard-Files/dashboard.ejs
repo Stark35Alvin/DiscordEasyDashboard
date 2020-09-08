@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Expert (tr) Tools</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+      body {
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,4,44,1) 9%, rgba(9,121,67,1) 35%, rgba(0,212,255,1) 100%);
+        background-size: 400% 400%;
+        animation: gradient 55s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .ytwopcqejapudvuelloe {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #dbc100;
+      }
+      
+      .fxlnygqjypcyiqudjanl {
+        margin: 0 0 auto;
+        padding: 10% 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      dnapqlirdxnonfiscsig {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        font-size: 30px;
+        border-radius: 10%;
+      }
+
+      nzydrutvpoiigeitnryh {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        border-radius: 10%;
+      }
+    
+      .fpwgsmttyulluukultas {
+        margin: 50px;
+        border: none;
+        padding: 10px;
+        height: 35px;
+        width: 145px;
+        background: transparent;
+        border: 1px dashed white;
+        border-radius: 8px;
+        transition: .5s;
+        color: white;
+      }
+
+      .fpwgsmttyulluukultas:hover {
+        width: 155px;
+        color: white
+      }
+
+      .qasgwwoqirnhkszjedre {
+        border: 1px dashed white;
+        border-radius: 8px;
+        transition: .5s;
+        color: white;
+        margin: 10 10 auto;
+        padding: 10px;
+        width: 20%;
+        height: 40%;
+        text-align: center;
+        background: transparent;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="fxlnygqjypcyiqudjanl">
+          <img src="<%- getUser.avatarLink %>" class="ytwopcqejapudvuelloe">
+          <dnapqlirdxnonfiscsig><br>Welcome, <%- getUser.tag %><br><br></dnapqlirdxnonfiscsig>
+              <hr style="width:450px;height:1px;border-width:0;color:gray;background-color:white">
+                <dnapqlirdxnonfiscsig>Select Guilds:<br></dnapqlirdxnonfiscsig>
+       <%- getGuilds.map(guild => {
+       return `<button class="qasgwwoqirnhkszjedre" onmouseover="this.style.border = '1px dashed #008516';" onmouseout="this.style.border =  '1px dashed white';"><img src="${guild.iconUrl}" style="border: none;" class="ytwopcqejapudvuelloe"><dnapqlirdxnonfiscsig><br>${guild.name.substring(0, 10)}...</dnapqlirdxnonfiscsig></button>`
+       })%>
+    </div>
+  </body>
+</html>
