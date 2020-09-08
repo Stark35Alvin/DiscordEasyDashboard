@@ -1,0 +1,32 @@
+{
+  "name": "DiscordEasyDashboard",
+  "version": "1.0.0",
+  "description": "Coding by Expert (tr)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "passport-discord": "^0.1.4",
+    "passport": "^0.4.1",
+    "discord-oauth2": "^2.3.0",
+    "request": "^2.88.2",
+    "express-session": "^1.17.1",
+    "axios": "^0.19.2",
+    "ejs": "^3.1.4",
+    "discord.js": "^12.3.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/expertr/DiscordEasyDashboard"
+  },
+  "license": "MIT",
+  "keywords": [
+    "expertr",
+    "discordeasydashboard"
+  ]
+}
