@@ -12,13 +12,13 @@ app.set('views', __dirname);
 DiscordEasyDashboard.System.pushApp(app)
 
 DiscordEasyDashboard.Dashboard.settings({
-  clientID: "CLIENT_ID",
-  clientSecret: "CLIENT_SECRET",
-  callbackUrl: "CALLBACK_URL",
-  scope: "identify guilds", 
-  botToken: "BOT_TOKEN",
-  loginPath: "/login",
-  authorizeUrlPrompt: true
+  clientID: "CLIENT_ID", //Required
+  clientSecret: "CLIENT_SECRET", //Required
+  callbackUrl: "CALLBACK_URL", //Required
+  scope: "identify guilds", //Required
+  botToken: "BOT_TOKEN", //Required
+  loginPath: "/login", //Required
+  authorizeUrlPrompt: true //Required
 })
 
  
