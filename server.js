@@ -12,11 +12,11 @@ app.set('views', __dirname);
 DiscordEasyDashboard.System.pushApp(app)
 
 DiscordEasyDashboard.Dashboard.settings({
-  clientID: "712193538716336149",
-  clientSecret: "hO6t8-eNXwP-qsndW0VR_Wp2gonjSDkB",
-  callbackUrl: "https://ring-stitch-seataadasf.glitch.me/callback",
+  clientID: "CLIENT_ID",
+  clientSecret: "CLIENT_SECRET",
+  callbackUrl: "CALLBACK_URL",
   scope: "identify guilds", 
-  botToken: "NzEyMTkzNTM4NzE2MzM2MTQ5.XsN_6w.D8mkzvmuOtaHHUo4157maFv-A1s",
+  botToken: "BOT_TOKEN",
   loginPath: "/login",
   authorizeUrlPrompt: true
 })
